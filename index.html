@@ -6,6 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Termia Solar Technologies</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/13806/',
+            type:'post',
+            data:$("#myForm").serializeArray(),
+            success: function(){
+              alert("Form Data Submitted :)")
+            },
+            error: function(){
+              alert("There was an error :(")
+            }
+        });
+    }
+    </script>
     <!-- Bootstrap CSS -->
 
     <!-- CSS only -->
@@ -37,15 +53,36 @@
       </div>
     </nav>
 
-    <div id="home" class="container custom-container ">
+    <div id="home" class="container custom-container" style="height: calc(100vh - 36px);">
       <div class="row h-100 justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-6 ">
           <h1 style="font-size: 48px;" class="mb-3">Tecnología solar inteligente</h1>
           <p style="font-size: 24px;" class="mb-4">Ahorro de hasta 100% en consumo eléctrico de calles y exteriores</p>
-          <button type="button" class="btn btn-secondary btn-lg">Cotizar ahora</button>
+          <a role="button" class="btn btn-secondary btn-lg" href="#contacto">Cotizar ahora</a>
         </div>
-        <div class="col-sm-12 col-lg-6">
-          <img src="./img/home_img1.jpg" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+        <div class="col-sm-12 col-lg-6 justify-content-center align-items-center">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/home_img1.jpg" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home2.png" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home4.png" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home5.png" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home6.png" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home7.png" alt="" style="max-height: 600px; max-width: 600px;" class="py-5">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -136,12 +173,12 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <div class="row justify-content-center align-items-center" style="height:calc(100vh - 36px)">
+            <div class="row justify-content-center align-items-center" style="height:calc(100vh - 70px)">
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style">  
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake1.jpeg" alt="Card image cap" style="height: 250px;">
+                    <h5 class="card-title text-center">SO-STR80W</h5>
+                    <img class="card-img-top" src="./img/card1.png" alt="Card image cap" style="height: 250px;">
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
                 </div>
@@ -149,8 +186,8 @@
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style" >
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake1.jpeg" alt="Card image cap" style="height: 250px;">
+                    <h5 class="card-title text-center">SO-STR120W</h5>
+                    <img class="card-img-top" src="./img/card2.png" alt="Card image cap" style="height: 250px;">
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
                 </div>
@@ -158,44 +195,8 @@
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style">
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake1.jpeg" alt="Card image cap" style="height: 250px;">
-                    <a href="#" class="btn btn-secondary">Ver mas</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row justify-content-center align-items-center" style="height:100vh">
-              <div class="col-sm d-flex justify-content-center">
-                <div class="card p-3 c-style">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
-            
-                    <a href="#" class="btn btn-secondary">Ver mas</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm d-flex justify-content-center">
-                <div class="card p-3 c-style">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
-                    
-                    <a href="#" class="btn btn-secondary">Ver mas</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm d-flex justify-content-center">
-                <div class="card p-3 c-style">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
-                    
+                    <h5 class="card-title text-center">SO-SFR-60W</h5>
+                    <img class="card-img-top" src="./img/card3.png" alt="Card image cap" style="height: 250px;">
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
                 </div>
@@ -209,8 +210,8 @@
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style">
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
+                    <h5 class="card-title text-center">SO-SE-180W</h5>
+                    <img class="card-img-top" src="./img/card4.png" alt="Card image cap" style="height: 250px;">
             
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
@@ -219,8 +220,8 @@
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style">
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
+                    <h5 class="card-title text-center">SO-LD60W</h5>
+                    <img class="card-img-top" src="./img/card5.png" alt="Card image cap" style="height: 250px;">
                     
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
@@ -229,8 +230,44 @@
               <div class="col-sm d-flex justify-content-center">
                 <div class="card p-3 c-style">
                   <div class="card-body text-center">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <img class="card-img-top" src="./img/p_fake2.jpeg" alt="Card image cap" style="height: 250px;">
+                    <h5 class="card-title text-center">SO-ECH-100W</h5>
+                    <img class="card-img-top" src="./img/card6.png" alt="Card image cap" style="height: 250px;">
+                    
+                    <a href="#" class="btn btn-secondary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-center align-items-center" style="height:100vh">
+              <div class="col-sm d-flex justify-content-center">
+                <div class="card p-3 c-style">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center">SO-SGW-120W</h5>
+                    <img class="card-img-top" src="./img/card7.png" alt="Card image cap" style="height: 250px;">
+            
+                    <a href="#" class="btn btn-secondary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm d-flex justify-content-center">
+                <div class="card p-3 c-style">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center">PSF-037C</h5>
+                    <img class="card-img-top" src="./img/card8.png" alt="Card image cap" style="height: 250px;">
+                    
+                    <a href="#" class="btn btn-secondary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm d-flex justify-content-center">
+                <div class="card p-3 c-style">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center">SO-PM-100W</h5>
+                    <img class="card-img-top" src="./img/card9.png" alt="Card image cap" style="height: 250px;">
                     <a href="#" class="btn btn-secondary">Ver mas</a>
                   </div>
                 </div>
@@ -252,39 +289,53 @@
     
 
 
+    <div id="marcas" class="container-fluid">
+      <h3 class="text-center pt-4" style="font-size: 36px;">Marcas</h3>
+      <div class="row align-items-center" style="height: calc(50vh - 36px);">
+        <div class="col text-center">
+          <img src="./img/tecnoled.png" class="img-beneficios" alt="Resistente al agua">
+        </div>
+        <div class="col text-center">
+          <img src="./img/energain.png" class="img-beneficios" alt="Enciende y apaga automaticamente">
+        </div>
+      </div>
+    </div>
     
 
     <!-- Contacto -->
 
     <div id="contacto" class="container-fluid justify-content-center align-items-center" style="height: 100vh; background-color: #fbfbfb;">
       <h3 class="text-center py-3">En breve <br/>te contactaremos</h3>
-      <div class="row py-2">
-        <div class="col text-center">
-          <p>Nombre</p>
-          <input type="text" placeholder="nombre" style="border-radius: 10px;"required>
+      <form id="myForm">
+        <div class="row py-2">
+          <div class="col text-center">
+            <p>Nombre *</p>
+            <input name="first_name" type="text" placeholder="nombre" style="border-radius: 10px;"required>
+          </div>
+          <div class="col text-center">
+            <p>Teléfono / Whatsapp *</p>
+            <input name="phone" type="text" placeholder="Teléfono" style="border-radius: 10px;"required>
+          </div>
+          <div class="col text-center">
+            <p>Empresa (Opcional)</p>
+            <input name="company" type="text" placeholder="empresa" style="border-radius: 10px;">
+          </div>
         </div>
-        <div class="col text-center">
-          <p>Teléfono / Whatsapp</p>
-          <input type="text" placeholder="Teléfono" style="border-radius: 10px;"required>
+        <div class="row">
+          <div class="col text-center">
+            <p>Apellido *</p>
+            <input name="last_name" type="text" placeholder="Apellido" style="border-radius: 10px;" required>
+          </div>
+          <div class="col text-center">
+            <p>Correo electrónico *</p>
+            <input name= "email"type="email" placeholder="e-mail" style="border-radius: 10px;" required>
+          </div>
+        </form>
+          <div class="col text-center">
+            <button onclick="SubForm()" class="btn btn-secondary btn-lg" style="width: 175px; border-radius: 10px;">Enviar</button>
+          </div>
         </div>
-        <div class="col text-center">
-          <p>Empresa</p>
-          <input type="text" placeholder="empresa" style="border-radius: 10px;">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <p>Apellido</p>
-          <input type="text" placeholder="Apellido" style="border-radius: 10px;" required>
-        </div>
-        <div class="col text-center">
-          <p>Correo electrónico</p>
-          <input type="email" placeholder="e-mail" style="border-radius: 10px;" required>
-        </div>
-        <div class="col text-center">
-          <button type="submit" class="btn btn-secondary btn-lg" style="width: 175px;">Enviar</button>
-        </div>
-      </div>
+      
       <div class="row">
         <div class="col">
           <h4 class="text-center py-3">... o escríbenos a:</h4>
@@ -305,10 +356,10 @@
     <div class="container-fluid bg-dark p-3">
       <div class="row">
         <div class="col">
-          <h4 class="text-center py-3" style="color: cornsilk; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">y síguenos en nuestras redes sociales</h4>
+          <h4 class="text-center py-3" style="color: cornsilk; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">todos los derechos reservados a Termia S.A.S. de C.V.</h4>
         </div>
         <div class="col">
-          <h4 class="text-center py-3" style="color: cornsilk;">y síguenos en nuestras redes sociales</h4>
+          <h4 class="text-center py-3" style="color: cornsilk;">2021</h4>
         </div>
       </div>
     </div>
@@ -316,6 +367,14 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
   </body>
 
 </html>
